@@ -47,7 +47,7 @@ r.get('/neighborhoodresturants/:city', (req, res) => {
 
 
 r.get('/', (req, res) => {
-    res.json(new SuccessResponseObject('express vercel boiler plate'));
+    res.json('{ "recipes": [{"coverImage": "butter-chicken", "name": "Butter Chicken (Chicken Tikka Masala)"}]}');
 });
 
 module.exports = r;
