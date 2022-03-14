@@ -56,8 +56,19 @@ r.get('/', (req, res) => {
     var ramDonRecipe = { "coverImage": "ram-don", "name": "Ram-Don" }
     var softTofuSoupRecipe = { "coverImage": "soft-tofu-soup", "name": "Spicy Soft Tofu Stew (Sundubu Jjigae)" }
     var spaghettiAndMeatballsRecipe = { "coverImage": "spaghetti-and-meatballs", "name": "Spaghetti and meatballs" }
+
     var cubanBeefStewRecipe = { "coverImage": "cuban-beef-stew", "name": "Cuban Beef Stew" }
     var boeufBourguignonRecipe = { "coverImage": "boeuf-bourguignon", "name": "Boeuf Bourguignon" }
+    var beefTinaktakRecipe = { "coverImage": "beef-tinaktak", "name": "Beef Tinaktak" }
+    var ghormehSabziRecipe = { "coverImage": "ghormeh-sabzi", "name": "Ghormeh Sabzi" }
+    var chickenAndTwoBeanChiliRecipe = { "coverImage": "chicken-and-two-bean-chili", "name": "Chicken and Two Bean Chili" }
+    var crepesRecipe = { "coverImage": "crepes", "name": "Crepes" }
+    var coqAuVinRecipe = { "coverImage": "coqAuVinRecipe", "name": "Coq Au Vin" }
+    var financiersRecipe = { "coverImage": "financiers", "name": "Financiers" }
+    var onionGaletteRecipe = { "coverImage": "onion-galette", "name": "Onion Galette" }
+    var greenBeanswithShallotsRecipe = { "coverImage": "green-beans-with-shallots", "name": "Green Beans with Shallots" }
+    var croqueMonsieurRecipe = { "coverImage": "croque-monsieur", "name": "Croque-Monsieur" }
+    
     jsonResponse['recipes'] = [
         butterChickenRecipe,
         chickenFettuccineAlfredoRecipe,
@@ -66,8 +77,18 @@ r.get('/', (req, res) => {
         ramDonRecipe,
         softTofuSoupRecipe,
         spaghettiAndMeatballsRecipe,
+
         cubanBeefStewRecipe,
-        boeufBourguignonRecipe]
+        boeufBourguignonRecipe,
+        beefTinaktakRecipe,
+        ghormehSabziRecipe,
+        chickenAndTwoBeanChiliRecipe,
+        crepesRecipe,
+        coqAuVinRecipe,
+        financiersRecipe,
+        onionGaletteRecipe,
+        greenBeanswithShallotsRecipe,
+        croqueMonsieurRecipe]
     res.json(jsonResponse);
 });
 
