@@ -51,7 +51,12 @@ r.get('/', (req, res) => {
     var jsonResponse = {}
     var butterChickenRecipe = {"coverImage": "butter-chicken", "name": "Butter Chicken (Chicken Tikka Masala)"}
     var chickenFettuccineAlfredoRecipe = {"coverImage": "chicken-fettuccine-alfredo", "name": "Chicken Fettuccine Alfredo"}
-    jsonResponse['recipes'] = [butterChickenRecipe, chickenFettuccineAlfredoRecipe]
+    var chickenPotatoesRecipe = {"coverImage": "chicken-potatoes", "name": "Chicken and potatoes"}
+    var elotaRecipe = {"coverImage": "elota", "name": "Elota"}
+    var ramDonRecipe = {"coverImage": "ram-don", "name": "Ram-Don"}
+    var softTofuSoupRecipe = {"coverImage": "soft-tofu-soup", "name": "Spicy Soft Tofu Stew (Sundubu Jjigae)"}
+    var spaghettiAndMeatballsRecipe = {"coverImage": "spaghetti-and-meatballs", "name": "Spaghetti and meatballs"}
+    jsonResponse['recipes'] = [butterChickenRecipe, chickenFettuccineAlfredoRecipe, chickenPotatoesRecipe, elotaRecipe, ramDonRecipe, softTofuSoupRecipe, spaghettiAndMeatballsRecipe]
     res.json(jsonResponse);
 });
 
